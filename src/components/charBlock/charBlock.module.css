@@ -1,0 +1,46 @@
+.content {
+  width: 1100px;
+  height: 1016px;
+  margin-top: 50px;
+  border: 1px solid red;
+}
+
+/*=====charList=====*/
+.charList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 650px;
+  height: 1016px;
+  border: 1px solid green;
+}
+
+.card {
+  width: 200px;
+  height: 318px;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+.card:hover {
+  filter: drop-shadow(0px 5px 20px #9f0013);
+}
+
+.cardImg {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.cardTitle {
+  height: 104px;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+  padding-left: 15px;
+  padding-top: 15px;
+
+  color: #ffffff;
+  background: #232222;
+}
