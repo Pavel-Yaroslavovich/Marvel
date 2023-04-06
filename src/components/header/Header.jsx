@@ -7,8 +7,8 @@ const Header = () => {
         <span className={styles.marvelСolor}>Marvel</span> information portal
       </h1>
       <div>
-        <span className={styles.charactersСolor}>Characters</span> /{" "}
-        <span className={styles.link}>Comics</span>
+        <span className={styles.charactersBlock}>Characters</span> /{" "}
+        <span className={styles.comicsBlock}>Comics</span>
       </div>
     </div>
   );

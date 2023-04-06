@@ -1,19 +1,22 @@
 import Spinner from "../spinner/Spinner";
 import styles from "./charBlock.module.css";
+import classNames from "classnames";
 import { nanoid } from "nanoid";
-import React from "react";
 
 const randomId = () => {
   return nanoid();
 };
 
-const CharList = ({ isLoading, arrNineChars, clickChoiceChar }) => {
-  const resNineChars = arrNineChars?.map((elem) => {
+const CharList = ({ isLoading, arrNineChars, clickChoiceChar, choiceChar }) => {
+  const resNineChars = arrNineChars?.map((elem, index) => {
     return (
       <div
-        className={styles.card}
+        className={classNames(
+          styles.card,
+          choiceChar === index ? styles.fonCard : ""
+        )}
         key={randomId()}
-        onClick={() => clickChoiceChar()}
+        onClick={() => clickChoiceChar(index)}
       >
         <img
           src={`${elem?.thumbnail.path}.${elem?.thumbnail.extension}`}
@@ -24,8 +27,6 @@ const CharList = ({ isLoading, arrNineChars, clickChoiceChar }) => {
       </div>
     );
   });
-  console.log(arrNineChars);
-  console.log(resNineChars);
 
   return (
     <div className={styles.charList}>

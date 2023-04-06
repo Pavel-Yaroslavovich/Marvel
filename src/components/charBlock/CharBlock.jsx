@@ -1,16 +1,26 @@
 import styles from "./charBlock.module.css";
 import CharList from "./CharList";
 import CharInfo from "./CharInfo";
+import heroPicture from "../img/asset.png";
 
-const CharBlock = ({ isLoading, arrNineChars, clickChoiceChar }) => {
+const CharBlock = ({
+  isLoading,
+  arrNineChars,
+  clickChoiceChar,
+  oneObjClick,
+  showInfoChar,
+  choiceChar,
+}) => {
   return (
     <div className={styles.content}>
       <CharList
         isLoading={isLoading}
         arrNineChars={arrNineChars}
         clickChoiceChar={clickChoiceChar}
+        choiceChar={choiceChar}
       />
-      <CharInfo />
+      {showInfoChar && <CharInfo oneObjClick={oneObjClick} />}
+      <img src={heroPicture} alt="super hero" className={styles.superHero} />
     </div>
   );
 };

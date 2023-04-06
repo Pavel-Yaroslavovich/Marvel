@@ -26,6 +26,11 @@
   margin-top: 0;
   margin-bottom: 10px;
   color: #000000;
+  /*обрезка длины имени ...*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 235px;
 }
 
 .randomchar__descr {

@@ -14,6 +14,9 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [nineChars, setNineChar] = useState();
   const [choiceChar, setChoiceChar] = useState(false);
+  const [showInfoChar, setShowInfoChar] = useState(false);
+
+  // const [isActiveCardFon, setIsActiveCardFon] = useState();
 
   // const [homepage, setHomepage] = useState();
   // const [wiki, setWiki] = useState();
@@ -42,11 +45,12 @@ function App() {
     setRandomChar(allChars?.[calc()]);
   };
 
-  let vass = [0, 1, 2, 3, 4, 5, 6, 7, 8];
-
-  const clickChoiceChar = () => {
-    console.log(setChoiceChar(!choiceChar));
+  const clickChoiceChar = (index) => {
+    setChoiceChar(index);
+    setShowInfoChar(true);
   };
+
+  const oneObjClick = nineChars?.[choiceChar];
 
   return (
     <div className="App">
@@ -60,6 +64,9 @@ function App() {
         arrNineChars={nineChars}
         isLoading={isLoading}
         clickChoiceChar={clickChoiceChar}
+        oneObjClick={oneObjClick}
+        showInfoChar={showInfoChar}
+        choiceChar={choiceChar}
       />
     </div>
   );
