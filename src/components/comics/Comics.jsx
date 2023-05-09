@@ -29,6 +29,9 @@ const Comics = () => {
         let arrEightСomics = [];
         for (let i = 0; i < 8; i++) {
           if (arrEightСharacters[i].comics.items[0]) {
+            // ("http://gateway.marvel.com/v1/public/comics/21366");
+            // ("http://gateway.marvel.com/v1/public/comics/21366");
+            let adress = arrEightСharacters[i].comics.items[0].resourceURI;
             arrEightСomics.push(
               fetch(
                 `${arrEightСharacters[i].comics.items[0].resourceURI}?limit=100&apikey=031fa526cb3f1b0273bccb5337a88faa`
