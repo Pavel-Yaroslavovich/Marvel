@@ -1,0 +1,20 @@
+.fonImg {
+  width: 100vw;
+  height: 100vh;
+}
+
+.btn {
+  position: absolute;
+  left: calc(53% - 99px);
+  transform: translateX(16%);
+  top: 130px;
+  z-index: 100;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: all 0.8s ease;
+  background-color: aquamarine;
+}

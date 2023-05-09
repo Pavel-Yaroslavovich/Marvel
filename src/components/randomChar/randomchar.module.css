@@ -50,6 +50,7 @@
 }
 
 .button__main {
+  text-align: center;
   box-sizing: border-box;
   width: 101px;
   height: 38px;
@@ -89,10 +90,11 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  user-select: none;
   color: #ffffff;
 }
 
-.randomchar__static {
+.static {
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -103,7 +105,7 @@
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
 }
 
-.randomchar__title {
+.title {
   width: 374px;
   font-family: "Roboto Condensed";
   font-weight: 700;
@@ -114,18 +116,18 @@
   color: #ffffff;
 }
 
-.randomchar__title:nth-child(2) {
+.title:nth-child(2) {
   margin-bottom: 22px;
 }
 
-.randomchar__shield {
+.shield {
   position: absolute;
   top: 136px;
   right: 67px;
   width: 100px;
 }
 
-.randomchar__mjolnir {
+.mjolnir {
   position: absolute;
   width: 180px;
   right: -40px;

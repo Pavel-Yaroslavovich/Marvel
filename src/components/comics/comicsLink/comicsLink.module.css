@@ -1,0 +1,62 @@
+.infoBlock {
+  display: flex;
+}
+
+.img {
+  display: block;
+  width: 293px;
+  height: 450px;
+  margin-right: 50px;
+  background: rgb(108, 118, 123);
+}
+
+.info {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  width: 550px;
+  margin-right: 127px;
+}
+
+.title {
+  font-size: 22px;
+  line-height: 26px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.pages {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.language {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+  color: #9f0013;
+}
+
+.back {
+  height: 20px;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.back:hover {
+  color: rgb(191, 26, 26);
+  transition: 0.4s;
+}

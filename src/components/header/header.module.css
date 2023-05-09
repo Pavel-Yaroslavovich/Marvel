@@ -19,9 +19,24 @@
 }
 
 .charactersBlock {
+  font-size: 30px;
+  line-height: 28px;
   cursor: pointer;
+  color: #000000;
 }
 
 .comicsBlock {
+  font-size: 30px;
+  line-height: 28px;
+  color: #000000;
   cursor: pointer;
+}
+
+/*добавлять цвет в - Characters / Comics*/
+.selectedBlockColor {
+  color: #9f0013;
+}
+
+.linkHeader {
+  text-decoration: none;
 }

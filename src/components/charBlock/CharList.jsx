@@ -3,7 +3,7 @@ import styles from "./charBlock.module.css";
 import classNames from "classnames";
 import { nanoid } from "nanoid";
 
-const randomId = () => {
+export const randomId = () => {
   return nanoid();
 };
 

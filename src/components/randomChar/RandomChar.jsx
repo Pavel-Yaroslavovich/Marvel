@@ -18,21 +18,17 @@ const RandomChar = ({ char, isLoading, randomCharBtn }) => {
         />
       )}
 
-      <div className={styles.randomchar__static}>
-        <p className={styles.randomchar__title}>
+      <div className={styles.static}>
+        <p className={styles.title}>
           Random character for today <br />
           Do you want to get to know him better?
         </p>
-        <p className={styles.randomchar__title}>Or choose another one</p>
-        <button className={styles.button__main} onClick={() => randomCharBtn()}>
-          <div className={styles.inner}>try it</div>
-        </button>
-        <img src={shield} alt="shield" className={styles.randomchar__shield} />
-        <img
-          src={mjolnir}
-          alt="shield"
-          className={styles.randomchar__mjolnir}
-        />
+        <p className={styles.title}>Or choose another one</p>
+        <div className={styles.button__main} onClick={() => randomCharBtn()}>
+          <div className={styles.inner}>update</div>
+        </div>
+        <img src={shield} alt="shield" className={styles.shield} />
+        <img src={mjolnir} alt="shield" className={styles.mjolnir} />
       </div>
     </div>
   );
