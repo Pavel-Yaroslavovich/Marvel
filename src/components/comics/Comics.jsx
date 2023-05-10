@@ -29,12 +29,21 @@ const Comics = () => {
         let arrEightСomics = [];
         for (let i = 0; i < 8; i++) {
           if (arrEightСharacters[i].comics.items[0]) {
+            // ("http://gateway.marvel.com/v1/public/comics/21366"); добавить букву "s" в http
             // ("http://gateway.marvel.com/v1/public/comics/21366");
-            // ("http://gateway.marvel.com/v1/public/comics/21366");
-            let adress = arrEightСharacters[i].comics.items[0].resourceURI;
+            // let adress = arrEightСharacters[i].comics.items[0].resourceURI;
+            // console.log(adress);
+
+            const arrUrlS =
+              arrEightСharacters[i].comics.items[0].resourceURI.split("");
+            arrUrlS.splice(4, 0, "s");
+            const resultArrUrlS = arrUrlS.join("");
+
+            // console.log(resultArrUrlS);
+
             arrEightСomics.push(
               fetch(
-                `${arrEightСharacters[i].comics.items[0].resourceURI}?limit=100&apikey=031fa526cb3f1b0273bccb5337a88faa`
+                `${resultArrUrlS}?limit=100&apikey=031fa526cb3f1b0273bccb5337a88faa`
               )
             );
           }
