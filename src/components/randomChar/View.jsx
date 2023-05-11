@@ -14,10 +14,10 @@ const View = ({ thumbnail, name, description }) => {
           {description ? description : "Описания нет!"}
         </p>
         <div className={styles.randomchar__btns}>
-          <a href="!#" className={styles.button__main}>
+          <a href="##" className={styles.button__main}>
             <div className={styles.inner}>homepage</div>
           </a>
-          <a href="!#" className={styles.button__secondary}>
+          <a href="##" className={styles.button__secondary}>
             <div className={styles.inner}>Wiki</div>
           </a>
         </div>

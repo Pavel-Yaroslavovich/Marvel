@@ -24,10 +24,10 @@ const CharInfo = ({ oneObjClick }) => {
         />
         <div className={styles.titleBtns}>
           <h2 className={styles.title}>{oneObjClick?.name}</h2>
-          <a href="!#" className={styles.main}>
+          <a href="##" className={styles.main}>
             <div className={styles.inner}>homepage</div>
           </a>
-          <a href="!#" className={styles.secondary}>
+          <a href="##" className={styles.secondary}>
             <div className={styles.inner}>Wiki</div>
           </a>
         </div>
